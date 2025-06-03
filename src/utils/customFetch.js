@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const customFetch = axios.create({
-    baseURL: "/api/v1",
+    baseURL: "https://mealmaster1-one.vercel.app/api/v1",
     withCredentials: true, // Ensures cookies (if any) are sent with requests
 });
 
