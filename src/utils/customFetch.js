@@ -1,15 +1,17 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const productionUrl = "https://mealmaster1-one.vercel.app/api/v1";
+const isDevelopment = process.env.NODE_ENV === 'development';
+const baseURL = isDevelopment ? '/api/v1' : 'https://mealmaster1-one.vercel.app/api/v1';
 
 const customFetch = axios.create({
-    baseURL: productionUrl,
+    baseURL,
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
-    }
+    },
+    credentials: 'include'
 });
 
 // Helper function to get token from localStorage safely
