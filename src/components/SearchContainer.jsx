@@ -1,7 +1,7 @@
 import { FormRowSelect, FormRow, SubmitBtn, SectionTitle } from ".";
 import Wrapper from "../assets/wrappers/SearchContainer";
 import { Form, useSubmit, Link } from "react-router-dom";
-import { MEAL, DIETARY, SORT } from "../../../utils/constants";
+import { MEAL, DIETARY, SORT } from "../utils/constants";
 import { useAllMealsContext } from "../pages/Meals";
 
 const SearchContainer = () => {

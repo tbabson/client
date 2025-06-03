@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { FaList, FaTimes } from "react-icons/fa";
 import { FormRow, FormRowSelect } from "../components";
 import Wrapper from "../assets/wrappers/AdminOrders";
-import { ORDERS, DELIVERY } from "../../../utils/constants";
+import { ORDERS, DELIVERY } from "../utils/constants";
 import customFetch from "../utils/customFetch";
 
 const AdminOrders = () => {

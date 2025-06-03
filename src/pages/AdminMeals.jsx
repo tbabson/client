@@ -3,7 +3,7 @@ import Wrapper from "../assets/wrappers/AdminMeals";
 import { FaPlus, FaList, FaEdit, FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
 import customFetch from "../utils/customFetch";
-import { MEAL, DIETARY, SORT } from "../../../utils/constants";
+import { MEAL, DIETARY, SORT } from "../utils/constants.js";
 import { FormRowSelect, FormRow } from "../components";
 import { useLoaderData, useNavigate, useLocation } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
