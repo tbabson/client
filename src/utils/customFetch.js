@@ -2,8 +2,12 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const customFetch = axios.create({
-    baseURL: "https://mealmaster1-one.vercel.app/api/v1",
-    withCredentials: true, // Ensures cookies (if any) are sent with requests
+    baseURL: "/api/v1",
+    withCredentials: true,
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+    }
 });
 
 // Helper function to get token from localStorage safely
