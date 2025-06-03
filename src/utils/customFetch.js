@@ -1,8 +1,10 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
+const productionUrl = "https://mealmaster1-one.vercel.app/api/v1";
+
 const customFetch = axios.create({
-    baseURL: "/api/v1",
+    baseURL: productionUrl,
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json',
